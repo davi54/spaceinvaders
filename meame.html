@@ -8,10 +8,10 @@
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam;'>
 		
-		 <a-assets>	 
-		    <a-asset-item id="tree-obj" src="/path/to/tree.obj"></a-asset-item>
-		  </a-assets>
-		 <a-entity obj-model="obj: #tree-obj;></a-entity>
+		<a-entity 
+		    obj-model=”obj: url(Pokeball_Obj.obj); 
+		</a-entity>
+		
 		<a-marker-camera preset='hiro'>
 		</a-marker-camera>
 	</a-scene>
