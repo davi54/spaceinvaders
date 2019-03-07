@@ -8,9 +8,10 @@
   <a-scene embedded arjs=’sourceType: webcam;’>
       <a-marker preset=’hiro’>
         <!-- Adding an OBJ file to an AR Project-->
-        
-        <a-entity obj-model=”obj: url(Pokeball_Obj.obj)";></a-entity>
-            
+             <a-assets>
+                  <a-asset-item id="tree-obj" src="/path/to/tree.obj"></a-asset-item>
+             </a-assets>
+             <a-entity obj-model=”obj: url(Pokeball_Obj.obj)"></a-entity>
       </a-marker>
   <a-entity camera>
   </a-entity>
