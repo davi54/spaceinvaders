@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<head>
+	</head>
+	<body>
+		<form action="/script.php" metod="post">
+			<div>
+				<label for "nome">Nome:</label>
+				<input type="text" name="nome"/>
+			</div>
+			<div>
+				<label for "email">E-mail:</label>
+				<input type="email" name="email"/>
+			</div>
+			<div>
+				<label for "msg">Mensagem:</label>
+				<textarea type="msg" name="msg"></textarea>
+			</div>
+			<div>
+				<label for "data">Data de Nascimeno:</label>
+				<input id="date" type="date">
+			</div>
+			
+			<?php 
+				echo $_POST('nome');
+				echo $_POST('email');
+				echo $_POST('msg');
+				echo $idade = date("d/m/Y")-$_POST('data');
+			?>
+	</body>
+</html>
