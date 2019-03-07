@@ -1,6 +1,3 @@
-
-  
-
 <script src=”https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 <script src=”https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 
@@ -8,14 +5,11 @@
   <a-scene embedded arjs=’sourceType: webcam;’>
       <a-marker preset=’hiro’>
         <!-- Adding an OBJ file to an AR Project-->
-             <a-scene>
-                <a-assets>
-                  <a-asset-item id="tree-obj" src="DeadTree.obj"></a-asset-item>
-                  <a-asset-item id="tree-mtl" src="DeadTree.mtl"></a-asset-item>
-                </a-assets>
-
-                <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
-              </a-scene>
+        <a-entity 
+            obj-model=”obj: url(DeadTree.obj); 
+            mtl: url(DeadTree.mtl)”>
+        </a-entity>
+              
       </a-marker>
   <a-entity camera>
   </a-entity>
